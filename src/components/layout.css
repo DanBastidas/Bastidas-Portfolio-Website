@@ -188,6 +188,7 @@ html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  background-color: hsla(0, 100%, 50%, 0.2);
 }
 * {
   box-sizing: inherit;
@@ -199,8 +200,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  background: lawngreen;
+  background-color: inherit;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -288,6 +289,7 @@ h4 {
   font-size: 1rem;
   line-height: 1.1;
 }
+/*
 h5 {
   margin-left: 0;
   margin-right: 0;
@@ -305,6 +307,7 @@ h5 {
   font-size: 0.85028rem;
   line-height: 1.1;
 }
+*/
 h6 {
   margin-left: 0;
   margin-right: 0;
