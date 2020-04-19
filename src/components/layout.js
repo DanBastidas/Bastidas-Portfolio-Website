@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core'
 /**
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
@@ -25,7 +27,9 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div css={css`
+      background-color: #00171f;
+    `}>
       <NavbarComp />
       <div
         style={{
@@ -35,13 +39,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © Daniel Bastidas {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
-    </>
+    </div>
   )
 }
 
