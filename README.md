@@ -3,5 +3,9 @@
   Daniel Bastidas
 </h1>
 
-##Info
+<h2>Information</h2>
+  
+<p>
+  This is my first portfolio Website. It's built with gatsby and deployed as a cloudflare worker at www.danbastidas.com
+</p>
 
