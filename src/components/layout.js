@@ -14,7 +14,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import NavbarComp from "./navbar"
 import "./layout.css"
 
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -28,18 +27,15 @@ const Layout = ({ children }) => {
 
   return (
     <div css={css`
-      background-color: #00171f;
+      background-color: transparent;
+      
     `}>
       <NavbarComp />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1200,
-          padding: `0 1.0875rem 1.45rem`
-        }}
-      >
+      <div className="content-wrap">
         <main>{children}</main>
+        <footer>made with ❤️️ in Boston | Daniel Bastidas © 2020 </footer>
       </div>
+      
     </div>
   )
 }
