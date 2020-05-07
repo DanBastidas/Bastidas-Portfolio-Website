@@ -1,5 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
+
+
 /**
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
@@ -10,9 +12,10 @@ import { css, jsx } from '@emotion/core'
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import NavbarComp from "./navbar"
 import "./layout.css"
+
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -33,7 +36,7 @@ const Layout = ({ children }) => {
       <NavbarComp />
       <div className="content-wrap">
         <main>{children}</main>
-        <footer>made with ❤️️ in Boston | Daniel Bastidas © 2020 </footer>
+        <footer>made with ❤️ in Boston | Daniel Bastidas © 2020 </footer>
       </div>
       
     </div>
